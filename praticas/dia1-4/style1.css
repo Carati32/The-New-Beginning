@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(126, 152, 175);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    text-align: center;
+    display: flex;
+        flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 2rem;
+    border: 10px solid #fff;
+    background-color: black;
+    color: slateblue;
+}
+
+ol{
+    list-style-position: inside;
+}

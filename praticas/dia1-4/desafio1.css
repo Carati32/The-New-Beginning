@@ -1,0 +1,43 @@
+* {
+    margin: 0; /* Usei pra resetar o margin dos elementos */
+    padding: 0; /*Usei pra resetar o padding dos elementos */
+    box-sizing: border-box;  /* usei pq lembrei que ele ajuda em alguma coisa, mas n lembro oq. */
+}
+
+header {
+    padding: 2rem; /*Usei pra fazer com que o texto fique separado das bordas */
+    text-align: center; /* Usei pra centralizar o texto*/
+    background-color: aqua; /* Usei pra mudar a cor */
+    margin-bottom: 3rem; /* Usei pra separar o header do main*/
+}
+
+.container {
+    width: 100%; /* Usei pensado que se o container ocupar toda a parte da tela vai ficar mais facil de centralizar as divs*/
+    display: flex; /* Display: flex basico ne, pra deixar os cards um do lado do outro */
+    padding: 12rem; /* Usei pra separar os elementos da borda, ou seja, separar os elementos de dentro da borda */
+    justify-content: center;/* usei pra centralizar o <h> e o <p> embora eu acho que o text-alin faz a mesma coisa também */
+    gap: 5rem; /* Usei pra que separasse os tres cards, assim evitando algum problema no futuro, n sei direito o que ele evita, mas sei que é bom usar. */
+}
+
+.card1, .card2, .card3 {
+    height: 50%; /* Usei pensando em deixar o card maior, mas nao fez nada. nao sei o pq*/
+    padding: 5rem; /* Usei pra separar e consequetemte deixar o card maior */
+}
+.card1{
+    background-color: rgb(139, 66, 207); /* Usei pra mudar a cor de fundo*/
+}
+.card2{
+    background-color: rgb(70, 70, 150); /* Usei pra mudar a cor de fundo */
+}
+
+.card3{
+    background-color: red; /* Usei pra mudar a cor de fundo*/
+}
+footer{
+    /* N tenho ideia de como deixar o footer fixo no final da pagina, entao vai margin mesmo  */
+    margin-top: 4rem; 
+    background-color: orange;  /* Usei pra mudar a cor de fundo */ 
+    color: blue; /* usei pra mudar a cor do texto */
+    text-align: center; /* usei pra centralizar o texto */
+    padding: 2.5rem;/* usei pra aumentar o footter */ 
+}
