@@ -33,12 +33,16 @@ body {
     height: 100vh;
     /* altura da tela */
     color: white;
+    overflow-x: hidden;
+
+    width: 100vw;
 }
 
 header {
     background-color: var(--nav);
     color: var(--texto);
     min-height: 3rem;
+    width: 100%;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -61,7 +65,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* pergunta pra ia, se eu colocasse o height 100vh no hero section ele so afetara o conteudo dentro? por isso seria melhor eu colocar no height pra ele afetar as secoes. */
+    width: 100%;
 }
 
 .hero-section {
@@ -116,29 +120,33 @@ img {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    width: 100%;
 }
 
-.secao-de-faccoes h2{
+.secao-de-faccoes h2 {
     font-size: 50px;
 }
 
 
-.cards{
+.cards {
     gap: 2rem;
     display: flex;
+    width: 100%;
+    justify-content: center;
     flex-direction: row;
 }
+
 .card {
     background-color: var(--card);
     display: flex;
-    min-width: 380px;
+    width: 22%;
     min-height: 265px;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
 }
 
-.card h2 {    
+.card h2 {
     font-size: 3rem;
 }
 
@@ -167,7 +175,7 @@ footer {
 }
 
 .footer-infos {
-     flex-direction: column;
+    flex-direction: column;
     gap: 0.2rem;
     width: 50%;
     align-items: flex-end;
@@ -177,7 +185,7 @@ footer {
 }
 
 .footer-links {
-        font-size: 22px;
+    font-size: 22px;
 
     flex-direction: column;
     gap: 0.2rem;
@@ -185,4 +193,65 @@ footer {
     align-items: flex-start;
     display: flex;
 
+}
+
+.menu-btn {
+    display: none;
+}
+
+
+@media (max-width: 800px) {
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 45%;
+    }
+}
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 4rem;
+    }
+
+    .hero-section h1 {
+        font-size: 7rem;
+    }
+
+    .hero-section h2 {
+        font-size: 2rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    p {
+        max-width: 90%;
+                font-size: 1rem;
+
+    }
+
+    .card {
+        width: 90%;
+                max-width: 90%;
+
+    }
+
+    .cards {
+        display: flex;
+    align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    header h1 {
+        font-size: 1rem;
+    }
+
+    .menu-btn {
+        display: block;
+        margin-right: 1rem;
+    }
 }
