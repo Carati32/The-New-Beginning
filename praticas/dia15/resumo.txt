@@ -1,0 +1,22 @@
+Resumo do dia - 14/03/2026
+Tempo estudando: 6h42min
+
+O que eu estudei:
+Módulos A, B, C e D do curso de JavaScript do Guanabara (Curso em Video):
+
+Módulo A: Conhecendo o JavaScript
+Módulo B: Comandos Básicos do JavaScript
+Módulo C: Entendendo o DOM
+Módulo D: Condições em JavaScrip
+
+O que eu construi hoje:
+3 projetos completos do Guanabara — Conversor de Medidas, Conversor de Temperaturas e Conversor de Moedas (R$ → US$)
+
+O que eu aprendi na prática:
+DOM Manipulation — selecionar elementos com querySelector, modificar conteúdo com innerHTML e innerText, limpar elementos antes de renderizar
+Criação dinâmica de elementos — createElement pra criar tags no JS e appendChild pra inserir dentro de outros elementos
+Variável global — declarar fora das funções pra ser acessível em qualquer lugar do código
+window.onload — executar código automaticamente quando a página carrega
+replace() — substituir caracteres numa string, como vírgula por ponto pra aceitar input brasileiro
+toFixed() — limitar casas decimais num número
++= — acumular conteúdo em vez de substitui

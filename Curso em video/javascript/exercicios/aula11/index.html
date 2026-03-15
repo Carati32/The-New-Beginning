@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Por</title>
+</head>
+
+<body>
+
+    <h1>Sistema de alguma coisa</h1>
+    <label for="pais">Qual seu país</label>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="Verificar()">
+    <div class="res"></div>
+    <script>
+        function Verificar() {
+            var país = document.querySelector('#pais')
+            var val = país.value
+            var res = document.querySelector('.res')
+            if (val == '') {
+                res.innerHTML = 'Escreva algo'
+            }
+            else if (val == 'Brasil'){
+                res.innerHTML = 'Você é Brasileiro!'
+            }
+            else {
+               res.innerHTML = 'Estrangeiro!'
+            }
+        }
+    </script>
+</body>
+
+</html>
