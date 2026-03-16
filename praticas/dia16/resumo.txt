@@ -1,0 +1,14 @@
+Resumo do dia - 15/03/2026
+Tempo estudando: 3h45min
+O que eu estudei:
+Desafios do Módulo D do curso de JavaScript do Guanabara (Curso em Video)
+O que eu construí hoje:
+6 desafios completos — Desconto de 10%, Reajuste Salarial, Fórmula de Bhaskara, Ano Bissexto, Preço antes e depois e Situação do Aluno
+O que eu aprendi na prática:
+if / else if / else — tomar decisões no código com base em condições
+Operador % (resto da divisão) — usado pra verificar divisibilidade, como na lógica do ano bissexto
+Precedência de operadores — usar parênteses pra garantir a ordem certa dos cálculos, como em (nota1 + nota2) / 2
+toLocaleString('pt-BR') — formatar números no padrão brasileiro com ponto no milhar e vírgula nos decimais, substituindo o toFixed()
+HTML dentro do innerHTML — usar tags como strong, mark, sup e br diretamente nas strings do JS
+Ordem de declaração com let — variáveis precisam ser declaradas antes de serem usadas
+Refatoração — mover código repetido pra fora dos blocos if/else pra deixar o código mais limpo
