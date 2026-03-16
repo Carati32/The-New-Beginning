@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hora do Dia</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body onload="carregar()">
     <header>
-        <h1>Hora do Dia</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
-        <div id="msg">
-            Aqui vai aparecer a mensagem...
+        <div>
+            <label for="numero">Número</label>
+            <input type="number" name="numero" id="numero">
+            <button onclick="gerar()">Gerar Tabuada</button>
         </div>
-        <div id="foto">
-            <img id="imagem" src="images/dia_circulo.png" alt="Foto do dia">
-        </div>
+        <select size="10" name="tabuada" id="tabuada"></select>
     </section>
     <footer>
-        <p>&copy;CrusoemVídeo</p>
+        <p>&copy;CursoemVídeo</p>
     </footer>
     <script src="script.js"></script>
 </body>
