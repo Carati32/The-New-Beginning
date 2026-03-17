@@ -1,0 +1,14 @@
+Resumo do dia - 17/03/2026
+Tempo estudando: 3h40min
+O que eu estudei:
+Módulo E e F do curso de JavaScript do Guanabara (Curso em Vídeo)
+O que eu construí hoje:
+Projeto Analisador de Números (versão do Guanabara + versão própria)
+O que eu aprendi na prática:
+push(), sort(), length, indexOf(), includes() — manipular arrays e buscar valores dentro deles
+for...in — percorrer arrays sem precisar controlar o contador manualmente
+Parâmetros com valor padrão — function soma(n1=0, n2=0) evita erros quando o argumento não é passado
+Função em variável — armazenar uma função dentro de let e chamá-la normalmente
+Recursão — função que chama a si mesma, sempre com uma condição de parada
+this dentro de objetos — acessar as propriedades do próprio objeto dentro de um método
+Projeto completo HTML + CSS + JS — validar entrada, criar elementos dinamicamente, calcular e exibir resultados no DOM
