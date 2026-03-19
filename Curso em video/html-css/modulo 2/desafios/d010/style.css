@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    gap: 2rem;
+    height: 20%;
+    background: linear-gradient(to bottom, #3bd47f, #1a5c38);
+}
+
+h1 {
+    margin-top: 30px;
+}
+
+
+
+nav {
+    gap: 1rem;
+    padding: 0.5rem;
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    display: flex;
+    background-color: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 1rem;
+    box-shadow: 1px 4px 14px 3px black;
+    gap: 1rem;
+
+    h1,
+    h2 {
+        font-family: 'idroid';
+        color: #1a5c38;
+    }
+}
+
+iframe {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main h2 {
+    background: linear-gradient(to right, #3bd47f, transparent);
+}
+
+.novo-mascote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        align-self: flex-start;
+        width: 100%;
+    }
+}
+
+p {
+    margin-top: 0.6rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-indent: 30px
+}
+
+/* .cabeca{
+    background-color: #1a5c38;
+    border-radius: 5px;
+} */
+
+.aprenda-mais {
+    background-color: #94e4b8;
+    border-radius: 5px;
+
+}
+
+.cabeca {
+    margin: 0px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #37a568;
+    color: white;
+    text-align: left;
+    display: flex;
+    text-indent: 10px;
+    font-weight: bold;
+     align-items: center;
+    height: 14%;
+}
+
+.listas {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    list-style-type: "✓ "
+}
