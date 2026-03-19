@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url('espaco.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+}
