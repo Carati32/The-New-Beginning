@@ -1,0 +1,10 @@
+Resumo do dia — 20/03/2026
+Tempo estudando: 2h38minO que eu estudei:
+Módulo de CSS avançado — efeitos visuais com imagens de fundo, posicionamento e tipografiaO que eu construí hoje:
+Projeto Cordel Moderno — página poética completa com HTML + CSS, recriando o exercício do Guanabara com layout estilizadoO que eu aprendi na prática:
+background-image, background-position, background-repeat, background-attachment: fixed — criar seções com imagem de fundo e efeito parallax
+rgba() — cor com transparência, usado pra sobrepor texto legível em cima de imagem
+white-space: pre-line — respeitar as quebras de linha do HTML sem precisar de <br>
+display: inline-block no parágrafo — fazer o fundo colorido abraçar só o texto, não a linha inteira
+Google Fonts — importar e aplicar múltiplas famílias tipográficas (Passion One, Cabin, Work Sans)
+Estrutura semântica — uso correto de header, main, footer com centralização via Flexbox no body

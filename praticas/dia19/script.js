@@ -6,6 +6,7 @@ const button_aventura = document.querySelector('.button_aventura')
 const genero_acao = document.querySelectorAll('.genero_acao')
 const genero_aventura = document.querySelectorAll('.genero_aventura')
 const genero_rpg = document.querySelectorAll('.genero_rpg')
+
 button_todos.addEventListener('click', () => {
      genero_acao.forEach(card => {
         card.style.display = 'block'

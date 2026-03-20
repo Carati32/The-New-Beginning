@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Passion One';
+    font-size: 50px;
+}
+
+a {
+    font-family: "Sriracha", cursive;
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    font-family: "Sriracha", cursive;
+    font-weight: bold;
+}
+
+main {
+    min-width: 30%;
+}
+
+.texto-por-cima {
+    background-color: rgba(53, 35, 35, 0.993);
+    display: inline-block;
+    padding: 1rem;
+    color: white;
+}
+.foto-flor{
+    background-image: url('images/background001.jpg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.livro{
+     background-image: url('images/background002.jpg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.poesia-pre {
+    white-space: pre-line;
+}
+
+
+footer{
+    background-color: maroon;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
