@@ -1,0 +1,42 @@
+Resumo do dia — 23/03/2026
+Tempo estudando: 4h29min
+O que eu estudei:
+Módulo 4 completo de HTML5 e CSS3 + início do Módulo 5 (Flexbox)
+O que eu aprendi na prática:
+Capítulo 22 — iframes
+<iframe> — incorporar páginas e conteúdo externo dentro de uma página
+Configurações de tamanho, borda e navegação dentro do iframe
+Conteúdo local no iframe — carregar arquivos HTML internos
+Segurança com iframes — atributo sandbox e boas práticas
+Capítulo 23 — Projeto do zero
+Construção de uma página completa do zero, com estrutura semântica
+Criação de botões para redes sociais e páginas individuais por rede
+Personalização de imagens dentro do projeto
+Capítulo 24 — Formulários HTML5
+<form>, <label>, <input> — estrutura base de formulários
+Métodos GET e POST — diferença e quando usar cada um
+Tipos de input: text, password, number, month, date, time, color, range, file
+<select>, <datalist>, <textarea> — elementos de seleção e texto longo
+checkbox e radio button — seleção múltipla e única
+<output> — exibir resultado de cálculos no formulário
+Compatibilidade com navegadores para inputs modernos
+Capítulo 25 — Media Queries
+@media — adaptar o layout para diferentes tamanhos de tela
+Versão para impressora com CSS separado
+Múltiplas media features — largura, altura, orientação do dispositivo
+Abordagem Mobile First — construir primeiro para telas pequenas
+Device breakpoints — pontos de quebra para celular, tablet e desktop
+Menu responsivo com HTML e CSS3
+Menu hambúrguer — estrutura e funcionamento
+Capítulo 26 — Projeto responsivo
+Tela de login responsiva só com HTML e CSS
+Versão mobile first da tela de login
+Formulário de login estilizado e finalizado
+Módulo 5 — Primeiros passos com Flexbox
+Introdução ao Flexbox — o que muda na forma de pensar o layout
+Direções e eixos — flex-direction, eixo principal e cruzado
+Empacotamento e fluxo — flex-wrap
+Alinhamento nos eixos — justify-content e align-items
+Centralização absoluta com Flexbox
+Alinhamento de elementos empacotados — align-content
+Anatomia dos itens flex
