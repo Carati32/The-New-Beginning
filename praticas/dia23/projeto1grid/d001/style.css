@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    align-content: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px ;
+    gap: 1rem;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.item{
+    text-align: center;
+    align-content: center;
+    height: 200px;
+    background-color: antiquewhite;
+}

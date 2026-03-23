@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 300px;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 1rem;
+}
+
+
+.item {
+    background-color: chartreuse;
+    min-width: 120px;
+    height: 120px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    align-content: center;
+}
+
+/* 
+  Centralizar item no grid:Numa grade 3×3, coloque um único item no centro exato — linha 2, coluna 2. Use grid-column e grid-row juntos, e centralize o conteúdo dentro dele com justify-self e align-self. */

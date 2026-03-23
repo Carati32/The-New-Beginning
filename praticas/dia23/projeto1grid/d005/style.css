@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'sidebar conteudo'
+    'footer footer';
+    grid-template-columns: 1fr 3fr;
+}
+
+
+.header{
+    grid-area: header;
+    background-color: red;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: blueviolet;
+}
+.conteudo{
+    grid-area: conteudo;
+    background-color: black;
+}
+.footer{
+    grid-area: footer;
+    background-color: yellow;
+}

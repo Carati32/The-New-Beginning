@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    'navbar navbar'
+    'sidebar videos';
+    grid-template-rows: 70px 1fr ;
+    grid-template-columns: 100px 1fr; 
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: red;
+}
+.sidebar{
+    background-color: rgb(64, 95, 95);
+    grid-area: sidebar
+}
+.videos{
+    background-color: rgb(61, 61, 49);
+    grid-area: videos;
+    justify-content: center;
+    display: grid;
+    grid-template-columns:repeat(3, minmax(111px, 350px));
+    gap: 4rem;
+    align-content: center;
+}
+.card{
+    margin-left: 1rem;
+    height: 180px;
+    background-color: rgb(170, 47, 47);
+}
+     /* Clone do layout do YouTube:Recrie o layout da página inicial do YouTube: navbar no topo, sidebar fina à esquerda, e área de vídeos com grid de cards 4×N à direita. Só estrutura e cores, sem conteúdo real. */

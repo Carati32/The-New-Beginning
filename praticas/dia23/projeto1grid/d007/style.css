@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+.item{
+    min-height: 200px;
+    min-width: 200px;
+    background-color: aqua;
+
+}
+
+.item:nth-child(1){
+    grid-row: 1 /3 ;
+}
