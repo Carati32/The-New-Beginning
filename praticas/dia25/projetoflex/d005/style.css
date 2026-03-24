@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+header {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    min-height: 5vh;
+    background-color: red;
+}
+
+
+main {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+aside {
+    width: 200px;
+    align-self: center;
+
+}
+
+h2 {
+    text-align: center;
+    flex-grow: 1;
+}
+
+
+footer {
+    width: 100%;
+    min-height: 5vh;
+    background-color: azure;
+    display: grid;
+    place-items: center;
+}

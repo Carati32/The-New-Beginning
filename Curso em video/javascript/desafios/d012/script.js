@@ -18,7 +18,7 @@ function verificar() {
         let dpspreco2 = dpspreco.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
 
         res.innerHTML += `<br>O produto custava R$ ${antpreco2} e agora custa R$ ${dpspreco2}.`
-        res.innerHTML += `<br>Hoje o produto está mais caro.`
+    res.innerHTML += `<br>Hoje o produto está mais caro.`
         res.innerHTML += `<br>O preço subiu R$ ${preco3} em relação ao preço anterior.`
         res.innerHTML += `<br>Uma variação de ${variacao2}% pra cima`
     }
