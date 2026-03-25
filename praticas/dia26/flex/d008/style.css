@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    border: 1px dotted black;
+    width: 100%;
+}
+
+.item{
+    border: 1px dotted black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    align-content: center;
+}
+
+
+#item1{
+    flex-grow: 1;
+}
+
+#item2{
+    flex-grow: 2;
+}
+
+
+#item3{
+    flex-grow: 3;
+}

@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+    align-items: center;
+}
+
+
+.item{
+    min-height: 250px;
+    min-width: 250px;
+    color: white;
+    background-color: black;
+    display: grid;    
+    place-items: center;
+}

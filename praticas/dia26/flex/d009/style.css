@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    height: 300px;
+    width: 300px;
+    border: 4px dotted rgb(255, 0, 0);
+
+}
+
+
+
+.item {
+    height: 150px;
+    border: 4px dotted black;
+    width: 150px;
+    flex-shrink: 0;
+}

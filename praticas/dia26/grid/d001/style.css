@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    gap: 16px;
+    place-items: center;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.item{
+    display: grid;
+    width: 200px;
+    height: 100%;
+    place-items: center;
+    border: 5px dotted black;
+}

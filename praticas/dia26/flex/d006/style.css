@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 1rem;
+    flex-flow: column-reverse wrap;
+}
+
+.item{
+    border: 1px dotted black;
+    color: rgb(0, 0, 0);
+    display: grid;
+    place-items: center;
+    width: 100px;
+    height: 100px;
+}

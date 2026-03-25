@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    border: 1px dotted black;
+    padding: 1rem;
+}
+
+.item{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    align-content: center;
+    border: 1px dotted black;
+}
+#rebelde {
+    align-self: center;
+}

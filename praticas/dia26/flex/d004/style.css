@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    border: 4px dotted black;
+}
+
+
+
+.item{
+    background-color: cornflowerblue;
+    width: 150px;
+    display: grid;
+    place-items: center;
+    border: 4px dotted black;
+    height: 150px;
+}
