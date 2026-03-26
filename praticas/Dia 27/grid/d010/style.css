@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    min-height: 100vh;
+    grid-template: 1fr 1fr/ 1fr 1fr;
+}
+
+.item {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.item:nth-child(1) {
+    z-index: 1;
+    background-color: rgb(231, 79, 32);
+    width: 400px;
+    height: 400px;
+}
+
+.item:nth-child(2) {
+    background-color: azure;
+    width: 300px;
+    height: 300px;
+}

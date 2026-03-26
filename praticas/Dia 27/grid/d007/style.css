@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.item {
+    border: 5px dotted black;
+    height: 200px;
+    display: grid;
+    place-items: center;
+    width: 200px;
+}

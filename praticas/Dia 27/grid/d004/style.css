@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas:
+        "header header"
+        "aside main"
+        "footer footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: minmax(100px, 200px)  1fr;
+}
+
+
+header {
+    border: 5px dotted black;
+    grid-area: header;
+}
+
+aside {
+    border: 5px dotted saddlebrown;
+    grid-area: aside;
+}
+
+main {
+    border: 5px dotted blanchedalmond;
+    grid-area: main;
+}
+
+footer {
+    border: 5px dotted blue;
+    grid-area: footer;
+}
