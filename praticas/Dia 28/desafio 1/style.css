@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.card{
+    width: 300px;
+    min-height: 340px;
+    background-color: white;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+img{
+    border-radius: 50%;
+}
+
+button{
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: darkcyan;
+    border-radius: 5px;
+}

@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.contador{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+
+}
+.buttons{
+    display: flex;
+    gap: 0.5rem;
+}
+button{
+    height: 50px;
+    width: 70px;
+    border-radius: 5px;
+    border: none;
+    transition: color 0.4s ease,font-size 0.4s ease , background-color 0.4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+button:nth-child(1), button:nth-child(2){
+    font-size: 20px;
+}
+button:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+button:active{
+    color: red;
+    background-color: chocolate;
+}
