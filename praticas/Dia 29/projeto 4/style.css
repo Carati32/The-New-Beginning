@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items     : center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: antiquewhite;
+}
+
+button{
+    padding: 1rem;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+button:hover{
+    cursor: pointer;
+}
+
+button:nth-child(1){
+    background-color: red;
+}
+
+button:nth-child(2){
+    background-color: green;
+}
+
+button:nth-child(3){
+    background-color: blue;
+}

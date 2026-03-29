@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.container{
+    background-color: rgb(192, 180, 165);
+    display: grid;
+    height: 400px;
+    width: 300px;
+    grid-template-areas: 
+    "resultado resultado resultado resultado"
+    "igual igual reset reset"
+    "numeros numeros numeros operadores"
+    "numeros numeros numeros operadores"
+    "numeros numeros numeros operadores";
+    grid-template-rows: repeat(4, minmax(40px,60px));
+}
+
+.numeros{
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr 1fr;
+}
+.resultado{
+    grid-area: resultado;
+}
+
+.igual{
+    grid-area: igual;
+}
+
+
+.reset{
+    grid-area: reset;
+}
+
+.numeros{
+    grid-area: numeros;
+}
+.number:nth-child(1){
+    grid-column: 1/span 4;
+    grid-row: 4/4;
+}
+.number:nth-child(10){
+    grid-column: 1/span 4;
+}
+.operadores{
+    grid-area: operadores;
+    display: grid;
+
+}
+
+.resultado{
+    background-color: rgb(114, 113, 113);
+    border: 2px solid black;
+    color: white;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+}
