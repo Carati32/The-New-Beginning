@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: antiquewhite;
+    flex-direction: column;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+button{
+    padding: 1rem;
+}
