@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #555;
+    flex-direction: column;
+}
+#container-principal{
+    display: flex;
+
+    gap: 20px;
+}
+
+
+.item-inventario{
+    width: 100px;
+    display: grid;
+    place-items: center;
+    height: 100px;
+    border: 2px solid #555;
+    background-color: #222;
+}
+
+.selecionado{
+    border-color: gold;
+    box-shadow: 0 0 15px gold;
+}
