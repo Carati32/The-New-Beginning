@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text: #f2f;
+    --card: rgb(219, 171, 219);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: antiquewhite;
+    justify-content: center;
+}
+
+
+.card {
+    display: grid;
+    place-items: center;
+    height: 400px;
+    width: 400px;
+    background-color: var(--card);
+    color: var(--text);
+}
+
+
+@media (prefers-color-scheme:dark) {
+    :root {
+        --text: rgb(66, 12, 66);
+        --card: rgb(61, 47, 61);
+    }
+}

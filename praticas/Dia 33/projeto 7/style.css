@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+button{
+    padding: 1rem;
+    position: relative;
+}
+
+button::after{
+    position: absolute;
+    top: -50%;
+    left: 10%;
+    background-color: rgb(160, 157, 153);
+    content: "Oh my god";
+    display: none;
+}
+
+button:hover::after{
+    display: block;
+}
