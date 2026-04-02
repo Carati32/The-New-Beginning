@@ -24,7 +24,7 @@
     --font-sm: 0.875rem;
     --font-md: 1rem;
     --font-lg: 1.5rem;
-    --font-xl: 2rem;
+    --font-xl: clamp(1.5rem, 5vw, 3rem);
 
     /* Borda */
 
@@ -49,13 +49,8 @@ body{
 header{
     position: sticky;
     top: 0;
-    
-    background-color: var(--fundo-card);    
-}
-
-nav{
-    background-color: var(--fundo-card);
-
+    backdrop-filter: blur(10px);
+    background-color: #1a1a1fcc;    
 }
 nav a{
     text-decoration: none;
@@ -109,6 +104,27 @@ main{
     background-color: var(--cor-destaque);
     border-radius: var(--radius-sm);
     padding: 1rem;
+    transition: all 0.3s ease;
+}
+#skills li:hover{
+    transform: translateY(-5px);
+    background-color:  var(--cor-destaque);
+    filter: brightness(1213132.2);
+}
+
+body:has(#skills li:hover){
+    animation: rgb 0.5s infinite;
+}
+
+@keyframes rgb {
+    0% {background-color: #FF0000;}
+    33%{background-color: #FF7F00;}
+    44%{background-color: #FFFF00;}
+    55%{background-color: rgb(0, 255, 0);}
+    66%{background-color: rgb(0, 0, 255)}
+    77%{background-color: rgb(75, 0, 130);}
+    88%{background-color: rgb(143, 0, 255);}
+    100%{background-color: #FF0000}
 }
 
 #contato{
@@ -116,12 +132,19 @@ main{
     display: flex;
     flex-direction: column;    
 }
-#contato input {
-    
+#contato input {    
     background-color: var(--fundo-card);
     border: 3px solid var(--borda);
     width: 300px;
 }  
+#contato input:focus{
+    outline: none;
+    border-color: #003bfd;
+}
+
+#contato input:not(:placeholder-shown):invalid{
+    border-color:#ff4b2b;
+}
 
 footer{
     display: flex;
@@ -134,4 +157,15 @@ footer a{
         padding: 1rem;
 
     color: var(--cor-destaque);
+}
+
+@media (prefers-color-scheme: light) {
+    :root{
+        --fundo-página: #F5F5F7;
+        --fundo-card: #FFFFFF;
+        --texto-principal: #1D1D1F;
+        --texto-secundário: #6E6E73;
+        --borda: #D2D2D7;
+        --cor-destaque: #4f46e5;
+    }
 }

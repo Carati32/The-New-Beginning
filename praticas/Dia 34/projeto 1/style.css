@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: aliceblue;
+    width: 100%;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+img{
+    width: 70px;
+    height: 50px;
+}
+.image, .btn{
+    flex: 1;
+}
+
+.btn{
+    display: flex;
+    justify-content: end;
+}
+
+button{
+    padding: 1rem;    
+}

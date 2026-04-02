@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    min-height: 5vh;
+    width: 100%;
+    text-align: center;
+    background-color: cadetblue;
+}
+
+main{
+    display: flex;
+    flex: 1;
+    background-color: rgb(18, 18, 48);
+}
+
+
+aside{
+    flex: 1;
+    width: 200px;
+    flex:  0 0 150px;
+    background-color: rgb(42, 70, 70);
+}
+
+section{
+    flex: 2;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(51, 81, 107);
+}
+
+@media (max-width: 600px){
+    main{
+        flex-direction: column;
+    }
+}
