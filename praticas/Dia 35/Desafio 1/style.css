@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: cadetblue;
+    border-radius: 5px;
+    width: 400px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    justify-content: space-evenly;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+img{
+    height: 100px
+}
+
+.hp-background{
+    background-color: gray;
+    width: 100%;
+}
+
+.hp{
+    height: 40px;
+    background-color: red;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    gap: 10px;
+}
+.skill{
+    border-radius: 5px;
+    border: none;
+    padding: .5rem;
+}
+
+#dano{
+    align-self: center;
+}
+
+
