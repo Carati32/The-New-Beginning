@@ -1,15 +1,15 @@
 const produtos = [
-  { nome: "Teclado", preco: 150 },
-  { nome: "Mouse", preco: 80 },
-  { nome: "Monitor", preco: 900 }
+  { nome: 'Teclado', preco: 100, categoria: 'Eletrônicos' },
+  { nome: 'Mouse', preco: 50, categoria: 'Eletrônicos' },
+  { nome: 'Camiseta', preco: 30, categoria: 'Vestuário' },
+  { nome: 'Monitor', preco: 500, categoria: 'Eletrônicos' }
 ];
 
-const produtosFormatados = produtos.map((item) => {
-  return {
-    nome: item.nome,
-    preco: `R$${item.preco}`
-  }
-})
 
 
-console.log(produtosFormatados)
+const desconto = produtos.filter(item => item.categoria === 'Eletrônicos').map(item => ({
+  nome: item.nome,
+  preco: item.preco * 0.90
+}))
+
+console.log(desconto)
