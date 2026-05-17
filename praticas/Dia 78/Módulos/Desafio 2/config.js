@@ -1,0 +1,1 @@
+export default {tema: "dark", idioma: "pt-BR" }
