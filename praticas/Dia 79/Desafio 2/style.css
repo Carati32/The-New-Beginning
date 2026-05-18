@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-direction: column;
+    transition: all ease .5s;
+}
+
+p {
+    word-break: break-all;
+    font-family: monospace;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem;
+    transition: transform ease .5s;
+    border: none;
+
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+button:active {
+    transform: scale(0.9);
+}
