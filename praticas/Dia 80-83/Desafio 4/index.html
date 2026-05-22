@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Cartão de Visita</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <form>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="ex:Ana Souza">
+            
+            <label for="profissao">Profissão</label>
+            <input type="text" id="profissao" placeholder="ex: Front-end Developer">
+            
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="ex: ana@email.com">
+        
+        <label for="github">Github</label>
+        <input type="text" id="github" placeholder="ex: github.com/ana">
+    </form>
+<div class="info-card">
+
+    <p id="card-preview">Preview em tempo real</p>
+    <div class="card">
+        <h4 id="card-nome"></h4>
+        <p id="card-profissao"></p>
+        <p id="card-email"></p>
+        <p id="card-github"></p>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
