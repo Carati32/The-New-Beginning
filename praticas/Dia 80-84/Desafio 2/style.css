@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-        outline: 1px solid red
-
 }
 
 :root {
@@ -27,26 +25,26 @@ body {
         "footer";
     background-color: var(--fundo-da-pagina);
     font-family: Arial, Helvetica, sans-serif;
+    grid-template-rows: repeat(autofit)
 }
 
 header {
     width: 100%;
     max-width: 100vw;
     min-height: 10vh;
-    max-height: 10vh;
     grid-area: header;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 1rem;
-
     align-items: center;
     background-color: var(--fundo-navbar-footer);
 }
 
 
-header div {
+header>div {
     min-width: 100px;
-    height: 100%;
+    height: 20%;
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -55,9 +53,9 @@ header div {
     align-items: center;
 }
 
-header div p{
-    font-size:20px;
-    font-weight:  600;
+header div p {
+    font-size: 20px;
+    font-weight: 600;
 }
 
 nav {
@@ -73,8 +71,9 @@ a {
 }
 
 header img {
-    max-width: 100%;
-    max-height: 50%;
+    width: clamp(40px, 2vw, 80px);
+    height: auto;
+    object-fit: contain;
 }
 
 main {
@@ -97,21 +96,23 @@ main {
     padding-bottom: 5rem;
 }
 
-.hero h1{
+.hero h1 {
     text-align: center;
     font-size: 5vw;
     color: var(--roxo-destaque);
 }
-span{
+
+span {
     color: var(--texto-branco);
 }
 
-.hero h2{
+.hero h2 {
     color: var(--texto-cinza-descricao);
     font-weight: 400;
     margin-bottom: 1rem;
 }
-.hero button{
+
+.hero button {
     padding: 1rem;
     width: 250px;
     min-height: 80px;
@@ -125,7 +126,7 @@ span{
 
 }
 
-.servicos{
+.servicos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,17 +134,20 @@ span{
 
     margin-bottom: 5rem;
 }
-.servicos h4{
+
+.servicos h4 {
     margin-bottom: 1rem;
-        font-size: 20px;
+    font-size: 20px;
 
     color: var(--roxo-destaque);
 }
-.servicos h2{
+
+.servicos h2 {
     font-size: 40px;
     color: var(--texto-branco);
 }
-.cards{
+
+.cards {
     margin-top: 2rem;
     display: flex;
     justify-content: space-around;
@@ -151,10 +155,11 @@ span{
     align-items: center;
 }
 
-.cards p{
+.cards p {
     color: var(--texto-cinza-descricao);
 }
-.card{
+
+.card {
     border-radius: 15px;
     border: 2px solid var(--borda-dos-cards);
     background-color: var(--fundo-cards);
@@ -166,23 +171,24 @@ span{
     height: 250px;
     text-align: center;
 }
-.card img{
+
+.card img {
     width: 100px;
     height: 100px;
     object-fit: contain
 }
 
-.card h2{
+.card h2 {
     font-size: 25px;
 
 }
 
-button:hover{
+button:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
 
-button:active{
+button:active {
     transform: scale(0.9);
 }
 
@@ -198,29 +204,90 @@ footer {
     text-align: center;
 }
 
-footer p:nth-child(1){
+footer p:nth-child(1) {
     color: var(--texto-cinza-claro);
 }
 
-footer p:nth-child(2){
+footer p:nth-child(2) {
     color: var(--texto-cinza-descricao);
 }
 
-.menu{
+.menu {
     display: none;
     padding: 1rem;
-    background-color: aqua;
+    background-color: var(--roxo-destaque);
+    border-radius: 5px;
+    border: none;
+    transition: transform ease 0.5s;
+    margin-right: 0.5rem;
+
 }
+
+.menu:active {
+    transform: scale(1.1);
+}
+
 @media (max-width: 768px) {
 
-    nav{
-        display: none;
+
+    nav {
+        position: relative;
+        display: grid;
+        grid-template-rows: 0fr;
+        width: 100%;
+        margin-top: 0.5rem;
+        align-items: stretch;
+        transition: grid-template-rows ease 0.5s;
     }
-    .menu{
-        display: block ;
+
+    nav.ativo {
+        display: grid;
+        grid-template-rows: 1fr;
     }
-    nav.ativo{
+
+    nav div {
+        overflow: hidden;
         display: flex;
+        min-height: 0;
+        width: 100%;
+        gap: 1rem;
         flex-direction: column;
+        flex-grow: 1;
+        text-align: center;
     }
+
+    .hero {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 100vw;
+    }
+
+    .hero h1 {
+        margin-top: 1rem;
+        font-size: 1.7rem;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+        text-align: center;
+        align-content: center;
+        height: 100px;
+    }
+
+    .hero button {
+        width: 150px;
+        min-height: 80px;
+        font-size: 18px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .menu {
+        display: block;
+    }
+
 }
