@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: aquamarine;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    min-height: 200px;
+    min-width: 200px;
+    border-radius: 10px;
+    background-color: rgb(241, 239, 232);
+}
+
+#cor-input {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+#cor-input #cor {
+    border: none;
+      background: transparent; 
+    height: 30px;
+    width: 50px;
+}
+
+#cor::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+#cor::-webkit-color-swatch {
+    border: none;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+form>input {
+    border-radius: 10px;
+    padding: 1rem;
+    border: none;
+    text-align: left;
+
+}
+
+button {
+    padding: 1rem;
+    min-width: 100px;
+    background-color: rgb(83, 74, 183);
+    color: white;
+    transition: transform ease .5s;
+    border-radius: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+form > p{
+    display: none;
+}
