@@ -1,4 +1,4 @@
-const formulario = document.querySelector('form');
+const formulario = document.querySelector('form')
 const nome = document.querySelector('#nome')
 const profissao = document.querySelector('#profissao')
 let cor = document.querySelector('#cor')
@@ -9,7 +9,7 @@ function separar(tex, quanti) {
     return tex.split(' ').slice(0, 2).map(palavra => palavra.slice(0, quanti)).join('')
 }
 formulario.addEventListener('submit', (event) => {
-    event.preventDefault();
+    event.preventDefault()
     if (nome.value === '' || profissao.value === '') {
         p.style.display = 'block'
     }
