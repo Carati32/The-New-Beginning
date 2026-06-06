@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    min-height: 100vh;
+}
+
+.container {
+    perspective: 1000px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.card {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all ease .6s;
+}
+
+.habs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.habs p:nth-of-type(1) {
+    color: rgb(227, 76, 38);
+}
+
+.habs p:nth-of-type(2) {
+    color: rgb(33, 150, 243);
+}
+
+.habs p:nth-of-type(3) {
+    color: rgb(240, 219, 79);
+}
+
+
+.barra-html,
+.barra-css,
+.barra-js {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background-color: white;
+}
+
+.progresso-html {
+    position: absolute;
+    height: 10px;
+    width: 60%;
+    background-color: rgb(227, 76, 38);
+    z-index: 1;
+}
+
+.progresso-css {
+    position: absolute;
+    height: 10px;
+    width: 40%;
+    background-color: rgb(33, 150, 243);
+    z-index: 1;
+}
+
+.progresso-js {
+    position: absolute;
+    height: 10px;
+    width: 35%;
+    background-color: rgb(240, 219, 79);
+    z-index: 1;
+}
+
+
+
+
+.frente,
+.verso {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    border: 3px solid rgb(208, 163, 253);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.verso h1{
+   color:  rgb(232, 214, 255);
+}
+
+button {
+    bottom: 20px;
+    backface-visibility: visible;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(48, 48, 138);
+    color: white;
+    transition: transform ease .5s;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+.frente {
+    background-color: white;
+}
+
+.verso {
+    background-color: rgb(30, 27, 75);
+    transform: rotateY(180deg);
+}
+
+.virado {
+    transform: rotateY(180deg);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(167, 139, 250);
+}
+
+img {
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    object-fit: cover;
+}

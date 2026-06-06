@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(153, 149, 149);
+}
+
+section {
+    max-width: 500px;
+    background-color: rgb(71, 61, 51);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    flex-direction: column;
+    min-width: 300px;
+}
+
+section hr {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header div {
+    width: 180px;
+    height: 180px;
+    padding: .3rem;
+    background-color: blueviolet;
+    border-radius: 50%;
+}
+
+header p {
+    border-radius: 15px;
+    background-color: rgb(230, 230, 250);
+    color: rgb(48, 25, 52);
+    padding: .4rem;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    gap: 1rem;
+    border-top: solid 1px;
+    padding-top: 12px;
+    border-bottom: solid 1px;
+    padding-bottom: 12px;
+}
+
+main h2 {
+    text-align: center;
+    color: white;
+}
+
+main p {
+    color: gray;
+}
+
+
+main div:nth-child(2) {
+    border-left: solid 1px;
+    border-right: solid 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+footer button {
+    height: 40px;
+    transition: all ease .5s;
+    border-radius: 5px;
+    border: none;
+    width: 100px;
+}
+
+#seguir {
+    background-color: rgb(102, 102, 226);
+    color: white;
+}
+
+#mensagem {
+    background: none;
+    color: rgb(102, 102, 226);
+    outline: solid 2px;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.9);
+
+}

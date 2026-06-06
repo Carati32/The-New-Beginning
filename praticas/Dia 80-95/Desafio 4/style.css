@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #0d0d0d;
+    --surface: #1a1a2e;
+    --neon: #a855f7;
+    --neon-glow: #7c3aed;
+    --text: #f0f0f0;
+    --muted: #888;
+}
+
+body{
+    background-color: var(--bg);
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:4rem;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    background-color: var(--surface);
+    color: var(--text);
+        border-radius: 10px;
+
+}
+
+form input {
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--neon);
+    color: var(--text);
+    padding: 0.3rem 0;
+    width: 100%;
+    outline: none;
+}
+.info-card{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: column;
+}
+.card{
+    display: flex;
+    height: 200px;
+    width: 300px;
+    padding: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: var(--surface);
+    border: 1px solid var(--neon);
+    border-radius: 10px;
+    gap: 1rem;
+}
+#card-preview{
+    color: var(--muted);
+}
+#card-nome{
+    color: var(--text);
+}
+
+#card-email, #card-profissao, #card-github{
+    color: var(--neon-glow);
+}

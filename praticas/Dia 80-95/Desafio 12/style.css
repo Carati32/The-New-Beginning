@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --bg: #f0ede8;
+  --card: #ffffff;
+  --accent: #2d2d2d;
+  --accent-light: #f5f2ee;
+  --selected: #1a1a1a;
+  --selected-text: #ffffff;
+  --muted: #9a9590;
+  --border: #e0dbd4;
+  --result-bg: #1a1a1a;
+  --result-text: #ffffff;
+  --result-muted: #888;
+  --mono: 'DM Mono', monospace;
+  --sans: 'DM Sans', sans-serif
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+    height: 100vh;
+}
+
+button,input{
+    font-family: var(--mono);
+}
+p,span{
+    font-family: var(--sans);
+}
+.card{
+    width: 400px;
+    min-height: 400px;
+    background-color: var(--card);
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.number{
+    position: relative;
+}
+
+.number p{
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: var(--muted);
+}
+
+span{
+    position: absolute;
+    left: 14px;
+    font-size: 15px;
+    color: var(--muted);
+    top:67%;
+    transform: translateY(-50%);
+}
+
+.gorjeta{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.card > p{
+    align-self: flex-start;
+}
+button{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+}
+
+input{
+    padding-left: 2.4rem;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background-color: var(--accent-light);
+    width: 100%;
+    font-size: 22px;
+    outline: none;
+    height: 50px;
+}
+
+input:focus{
+    outline: none;
+    border: 1.5px solid var(--accent);
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="card-topo">
+            <div class="number">
+                <p>CONTA</p>
+                <span>R$</span>
+                <input type="number" placeholder="0,00" id="valor" step="0.01">
+            </div>
+            <div class="gorjeta">
+                <p>GORJETA</p>
+                <div class="buttons">
+                    <button data-tip="10">10%</button>
+                    <button data-tip="15">15%</button>
+                    <button data-tip="20">20%</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-inferior">
+                <div class="res-gorjeta">
+                    <p>GORJETA</p>
+                    <p class="valor-gorjeta">R$ 9,12</p>
+                </div>
+                <hr>
+                <div class="res-total">
+                    <p>TOTAL</p>
+                    <p class="valor-total">R$ 29,12</p>
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

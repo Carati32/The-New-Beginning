@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fundo-da-pagina: #0d0d0d;
+    --fundo-navbar-footer: #111111;
+    --fundo-cards: #161616;
+    --borda-dos-cards: #2a2a2a;
+    --roxo-destaque: #7c3aed;
+    --roxo-escuro: #1e0d40;
+    --texto-branco: #ffffff;
+    --texto-cinza-claro: #aaaaaa;
+    --texto-cinza-descricao: #666666;
+    --borda-sutil: #222222;
+}
+
+
+body {
+    display: grid;
+    font-family: Helvetica;
+    min-height: 100vh;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    background-color: var(--fundo-da-pagina);
+}
+
+header {
+    grid-area: header;
+    width: 100%;
+    min-height: 10vh;
+    background-color: var(--fundo-navbar-footer);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+header>div {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+header p {
+    font-size: clamp(10px, 1.2rem, 40px);
+    color: var(--texto-branco);
+    font-weight: 700;
+}
+
+header img {
+    width: clamp(40px, 2rem, 80px);
+}
+
+.menu {
+    width: 45px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--roxo-destaque);
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    width: 100%;
+    align-items: stretch;
+    margin-top: 1rem;
+    transition: grid-template-rows ease 0.5s;
+}
+
+nav div {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    text-align: center;
+    min-height: 0;
+    flex-direction: column;
+}
+
+.ativo {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    grid-area: main;
+    grid-template-areas:
+        "hero"
+        "servicos";
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.hero {
+    grid-area: hero;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 5rem;
+    border-bottom: 5px solid var(--borda-dos-cards);
+}
+
+.hero h1 {
+    font-size: 30px;
+    color: var(--texto-branco);
+}
+
+.hero span {
+    color: var(--roxo-destaque);
+}
+
+.hero p {
+    color: var(--texto-cinza-descricao);
+    font-weight: 600;
+    margin: 0 1rem;
+}
+
+.hero button {
+    border: none;
+    border-radius: 15px;
+    background-color: var(--roxo-destaque);
+    font-size: 20px;
+    width: clamp(150px, 2rem, 250px);
+    font-weight: 600;
+    min-height: 80px;
+    color: var(--texto-branco);
+    transition: transform ease 0.5s;
+}
+
+.hero button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.hero button:active {
+    transform: scale(0.9);
+}
+
+.servicos {
+    grid-area: servicos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: .5rem;
+}
+
+.servicos h5 {
+    font-size: 1.2rem;
+    color: var(--roxo-destaque);
+}
+
+.servicos h2 {
+    font-size: 2rem;
+    color: var(--texto-branco);
+}
+
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 100%;
+    gap: 2rem;
+    place-items: center;
+}
+
+.card{
+    min-width: 200px;
+    max-width: 300px;
+    border-radius: 15px;
+    min-height: 250px;
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    border: 2px solid var(--borda-dos-cards);
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--fundo-cards);
+}
+.card h3{
+    color: var(--texto-branco);
+    font-size: 25px;
+}
+.card p{
+    color: var(--texto-cinza-descricao);
+}
+.card img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+footer {
+    margin-top: 4rem;
+    grid-area: footer;
+    width: 100%;
+    height: 10vh;
+    background-color: var(--fundo-navbar-footer);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+footer p:nth-child(1){
+    color: var(--texto-cinza-claro);
+}
+footer p:nth-child(2){
+    color: var(--texto-cinza-descricao);
+}
+
+
+@media (min-width: 768px){
+.menu {
+    display: none;
+}
+
+
+nav{
+    display: block;
+    margin: 0;
+    width: 0;
+}
+
+nav div{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+};
+
+}
