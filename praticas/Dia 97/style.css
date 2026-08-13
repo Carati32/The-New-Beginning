@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.visually-hidden {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+    margin: -1px;
+    border: 0px;
+    white-space: nowrap;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    height: 100vh;
+    background-color: #0d0d0d;
+    font-family: 'Courier New';
+}
+
+h1 {
+    color: #f0f0f0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.card {
+    background-color: #151a24;
+    color: #f0f0f0;
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #00fff2;
+    box-shadow: 0 0 15px rgba(0, 255, 242, 0.15);
+}
+
+#adicionar-tarefas {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#nova-tarefa {
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px;
+    flex: 1;
+    background-color: #0d0d0d;
+    color: #f0f0f0;
+    border: 1px solid #333;
+}
+
+#adicionar {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    background-color: #00fff2;
+    color: #0d0d0d;
+    border: none;
+    cursor: pointer;
+    transition: transform ease 0.5s;
+}
+
+#adicionar:hover {
+    transform: scale(1.1);
+}
+
+#adicionar:active {
+    transform: scale(0.9);
+}
+
+li {
+    padding: 10px;
+    list-style: none;
+    margin-bottom: 10px;
+    border: 2px solid #2a3040;
+    color: #f0f0f0;
+    background-color: #1a1f2e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.concluida {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.botao-excluir {
+    min-height: 30px;
+    min-width: 30px;
+    border-radius: 5px;
+    background-color: #00fff2;
+    color: #0d0d0d;
+    border: none;
+    cursor: pointer;
+    transition: transform ease 0.5s;
+}
