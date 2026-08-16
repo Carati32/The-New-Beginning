@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.visually-hidden{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    clip: rect(0,0,0,0);
+    clip-path: inset(50%) ;
+    overflow: hidden;
+    margin: -1px;
+    border: 0px;
+    padding: 0px;
+    white-space: nowrap;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: navajowhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card{
+    display: flex;
+    background-color:#e0f2fe;
+    align-items: center;
+    flex-direction: column;
+    min-height: 500px;
+    min-width: 450px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.buscador{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    min-height: 40px;
+    gap: 10px;
+}
+
+input{
+    padding: 10px;
+    border: 1px solid #808080;
+    transition: box-shadow ease 0.2s;
+    border-radius: 5px;
+}
+input:focus{
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25)
+}
+#buscar-cidade{
+    border-radius: 5px;
+    border: none;
+    min-width: 40px;
+    transition: transform ease .5s;
+    background-color: #3b82f6;
+}
+
+#buscar-cidade:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#buscar-cidade:active{
+    transform: scale(0.9);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 8px;
+}
+
+.card-tempo{
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: #1e293b;
+}
+
+.dia{
+    font-size: 12px;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.5s;
+}
+
+.maxTem{
+    font-size: 20px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.minTem{
+    font-size: 16px;
+    color: #94a3b8;
+}
+
+.ultimo-impar{
+    grid-column:  span 3;
+}
